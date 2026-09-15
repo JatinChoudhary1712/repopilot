@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-src/repopilot.egg-info/PKG-INFO
-src/repopilot.egg-info/SOURCES.txt
-src/repopilot.egg-info/dependency_links.txt
-src/repopilot.egg-info/requires.txt
-src/repopilot.egg-info/top_level.txt
