@@ -17,6 +17,9 @@ dependencies = [
     "pydantic>=2.7.0",
     "pydantic-settings>=2.2.0",
     "python-dotenv>=1.0.1",
+    "asyncpg>=0.31.0",
+    "jwt>=1.4.0",
+    "pyjwt>=2.14.0",
 ]
 
 [project.optional-dependencies]

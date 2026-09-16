@@ -5,6 +5,8 @@ class Settings(BaseSettings):
     app_name: str = "RepoPilot"
     environment: str = "development"
     database_url: str
+    github_app_id: int
+    github_private_key_path: str
 
     model_config = SettingsConfigDict(
         env_file=".env",
