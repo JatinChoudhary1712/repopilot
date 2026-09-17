@@ -14,6 +14,13 @@ from sqlalchemy.ext.asyncio import (
 
 from app.config import settings
 
+from collections.abc import AsyncGenerator
+
+
+async def get_db() -> AsyncGenerator[AsyncSession, None]:
+    async with AsyncSessionLocal() as session:
+        yield session
+    
 
 engine = create_async_engine(
     settings.database_url,
