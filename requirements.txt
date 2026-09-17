@@ -6,7 +6,8 @@ asyncpg
 
 alembic
 
-
+langgraph 
+langchain-openai
 
 pydantic
 pydantic-settings

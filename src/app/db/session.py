@@ -27,6 +27,16 @@ engine = create_async_engine(
     echo=True,
 )
 
+readonly_engine = create_async_engine(
+    settings.readonly_database_url or settings.database_url
+)
+
+AsyncReadonlySessionLocal = async_sessionmaker(
+    bind=readonly_engine,
+    class_=AsyncSession,
+    expire_on_commit=False,
+)
+
 AsyncSessionLocal = async_sessionmaker(
     bind=engine,
     class_=AsyncSession,
